@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Wzór Herona i Trójmian</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js" async></script>
+</head>
+<body>
+    <div id="trojmian">
+        <h1>Trójmian</h1>
+        <!-- Pola do wprowadzenia wartości boków -->
+        a:<input type="text" id="delta_a"><br />
+        b:<input type="text" id="delta_b"><br />
+        c:<input type="text" id="delta_c"><br />
+        <!-- Przycisk wywołujący funkcje -->
+        <button onclick="sprawdzDaneDelty();">Oblicz delte</button><br />
+        <button onclick="liczbyCalkowite();">Całkowite</button>
+        <button onclick="liczbyUlamki();">Ułamki</button>
+        <!-- Spany domyślnie ukryte, pokazują one informacje oraz wyniki-->
+        <span id="wynik_delty"></span>
+        <span id="wynik_x0"></span>
+        <span id="wynik_x1"></span>
+        <span id="wynik_x2"></span>
+    </div>
+    
+    <div id="trojmian_tresc">
+        <fieldset>
+            <legend><h3>TWIERDZENIE</h3></legend>
+        Dany jest trójmian kwadratowy <b><i>ax<sup>2</sup>+bx+c</i></b> o współczynnikach rzeczywistych, gdzie x<sub>0</sub> lub x<sub>1</sub>, x<sub>2</sub> są rozwiązaniami trójmianu.<br />
+            Wzór: ∆ = b<sup>2 </sup>- 4ac <br />
+            x<sub>0</sub>= -b / 2a <b>dla ∆ = 0</b><br />
+            x<sub>1</sub>= (-b - √∆) / 2a  <b>dla ∆ > 0</b><br />
+            x<sub>2</sub>= (-b + √∆) / 2a  <b>dla ∆ > 0</b><br />
+        </fieldset>
+        
+    </div>
+    
+    <div id="heron">
+        <h1>Wzór Herona</h1>
+        <!-- Pola do wprowadzenia wartości boków -->
+        a:<input type="text" id="heron_a"><br />
+        b:<input type="text" id="heron_b"><br />
+        c:<input type="text" id="heron_c"><br />
+        <!-- Przycisk wywołujący funkcje -->
+        <button onclick="sprawdzDaneHerona();">Oblicz pole trójkąta</button>
+        <!-- Span domyślnie ukryty, pokazuje on informacje oraz wynik -->
+        <span id="pole_trojkata"></span>
+    </div>
+    
+    <div id="heron_tresc">
+        <fieldset>
+            <legend><h3>TWIERDZENIE</h3></legend>
+                Wzór Herona – wzór pozwalający obliczyć pole (S) trójkąta, jeśli znane są długości a, b, c jego boków. <br />
+                p = 0.5 * (a + b + c) <br />
+                S = √p(p - a)(p - b)(p - c)
+        </fieldset>
+    </div>
+</body>
+</html>

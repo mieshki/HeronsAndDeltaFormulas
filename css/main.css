@@ -1,0 +1,72 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+*
+* Domyślne ukrycie spanów
+*
+*/
+
+#wynik_delty, #wynik_x0, #wynik_x1, #wynik_x2, #pole_trojkata{
+    display: none; 
+}
+
+#wynik_x1, #wynik_x2{
+    display: block;
+    float: left;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+#x0, #x1, #x2{
+    width: 30px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+
+
+#wielkosc_ulamka_x0, #wielkosc_ulamka_x1, #wielkosc_ulamka_x2{
+    width: 15px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+#ulamek_x0, #ulamek_x1, #ulamek_x2{
+    width: 25px;
+    height: 50px;
+    float: left;
+}
+
+
+#trojmian{
+    float: left;
+    width: 300px;
+    height: 400px;
+}
+
+#trojmian_tresc{
+    float: left;
+    width: 500px;
+    height: 400px;
+    
+}
+
+#heron{
+    clear: both;
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+#heron_tresc{
+    float: left;
+    width: 500px;
+    height: 300px;
+}
+
